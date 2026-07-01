@@ -1,0 +1,66 @@
+/*!
+ * @file        navbar.css
+ * @project     KishanPujari-Portfolio
+ * @version     1.0.0
+ * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
+ * @license     MIT
+ * @description Styles the primary navigation bar, branding, and
+ *              navigation links displayed throughout the application.
+ */
+
+/* Navigation container */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 40px;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(var(--bg-pure), 0.7);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Brand identity */
+.nav-logo {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: var(--text-primary);
+    opacity: 0;
+    /* Managed by the scroll controller */
+    transform: scale(0.85);
+    transition: opacity 0.2s linear, transform 0.3s var(--transition-smooth);
+}
+
+/* Navigation layout */
+.nav-right-group {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+/* Navigation links */
+.nav-item {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: var(--text-primary);
+}

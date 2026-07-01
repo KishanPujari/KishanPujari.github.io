@@ -1,0 +1,36 @@
+/*!
+ * @file        variables.css
+ * @project     KishanPujari-Portfolio
+ * @version     1.0.0
+ * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
+ * @license     MIT
+ * @description Global design tokens including colors, typography,
+ *              spacing primitives, border radii, and animation values
+ *              shared across the application.
+ */
+
+:root {
+    /* Color system */
+    --bg-pure: #050505;
+    --bg-surface: #0c0c0e;
+    --bg-surface-elevated: #141417;
+    --border-color: rgba(255, 255, 255, 0.06);
+    --border-hover: rgba(255, 255, 255, 0.18);
+    --text-primary: #f5f5f7;
+    --text-secondary: #86868b;
+    --text-muted: #424245;
+    --accent-glow: rgba(255, 255, 255, 0.08);
+    --name-border: rgba(255, 255, 255, 0.5);
+    --grain-opacity: 0.025;
+
+    /* Shared sizing */
+    --radius-premium: 24px;
+    --radius-inner: 16px;
+
+    /* Typography */
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-display: 'Syne', sans-serif;
+
+    /* Motion */
+    --transition-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+}

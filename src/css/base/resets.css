@@ -1,0 +1,33 @@
+/*!
+ * @file        resets.css
+ * @project     KishanPujari-Portfolio
+ * @version     1.0.0
+ * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
+ * @license     MIT
+ * @description Establishes a consistent rendering baseline and global
+ *              document defaults across browsers.
+ */
+
+/* Global element reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* Root document defaults */
+html,
+body {
+    background-color: var(--bg-pure);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* Rendering optimizations */
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,263 @@
+<!--!
+ * @project     KishanPujari-Portfolio
+ * @version     1.0.0
+ * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
+ * @copyright   2026 Kishan Pujari
+ * @license     MIT (https://opensource.org/licenses/MIT)
+ * @repository  https://github.com/KishanPujari/KishanPujari.github.io
+ * @description Personal portfolio showcasing projects, technical interests,
+ *              development philosophy, and contact information.
+ -->
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kishan Pujari — Developer & Tech Enthusiast</title>
+
+    <!-- Application stylesheet -->
+    <link rel="stylesheet" href="./src/css/main.css">
+
+    <!-- Font optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Primary navigation -->
+    <nav class="navbar">
+        <div class="nav-logo" id="nav-logo">K.P.</div>
+
+        <div class="nav-right-group">
+            <div class="nav-links">
+                <a href="#" onclick="seekToSection(0); return false;" class="nav-item">
+                    <i class="fa-solid fa-compass icon-sm"></i> Overview
+                </a>
+
+                <a href="#" onclick="seekToSection(1); return false;" class="nav-item">
+                    <i class="fa-solid fa-layer-group icon-sm"></i> Pinned
+                </a>
+
+                <a href="#" onclick="seekToSection(2); return false;" class="nav-item">
+                    <i class="fa-solid fa-terminal icon-sm"></i> Philosophy
+                </a>
+
+                <a href="#" onclick="seekToSection(3); return false;" class="nav-item">
+                    <i class="fa-solid fa-comment-dots icon-sm"></i> Connect
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll depth spacer for cinematic navigation -->
+    <div class="scroll-container-track"></div>
+
+    <!-- Fixed viewport containing animated content sections -->
+    <main class="viewport-canvas">
+
+        <!-- Hero / Overview -->
+        <section class="kinetic-section active" id="sec-overview">
+            <div class="hero-center-wrapper">
+
+                <div class="hero-badge">
+                    <i class="fa-solid fa-microchip icon-sm"></i>
+                    Exploring Cross-Platform Development • Building in Public
+                </div>
+
+                <h1 class="hero-title">
+                    Crafting focused tools<br>
+                    <span class="text-gradient">for desktops, mobiles, & clean workflows.</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    I'm Kishan Pujari. I spend my spare time exploring native, cross-platform
+                    development across Windows, macOS, Linux, and mobile ecosystems. Currently
+                    refining my initial set of utility tools and applications from the ground up.
+                </p>
+
+                <!-- Primary actions -->
+                <div class="hero-cta">
+                    <a href="#" onclick="seekToSection(1); return false;" class="btn btn-primary">
+                        <i class="fa-solid fa-boxes-packing"></i> View Projects
+                    </a>
+
+                    <a href="https://github.com/KishanPujari/" target="_blank" class="btn btn-secondary">
+                        <i class="fa-brands fa-github"></i> Explore GitHub
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Current projects -->
+        <section class="kinetic-section layout-panel" id="sec-pinned">
+
+            <!-- Independently scrollable content area -->
+            <div class="panel-inner-scroll" id="pinned-scroll-box">
+
+                <div class="grid-container-block">
+
+                    <div class="section-header">
+                        <span class="section-tag">// Current Focus</span>
+                        <h2>Active Experiments</h2>
+                    </div>
+
+                    <!-- Upcoming work -->
+                    <div class="coming-soon-wrapper">
+
+                        <div class="coming-soon-card">
+
+                            <div class="glow-point"></div>
+
+                            <div class="card-meta">
+                                <span class="status-pill">
+                                    <span class="pulse-dot"></span>
+                                    Under Construction
+                                </span>
+
+                                <span class="date-tag">Rolling Releases</span>
+                            </div>
+
+                            <h3>Codebases in refinement.</h3>
+
+                            <p>
+                                I'm currently auditing my initial repositories for performance
+                                and clean architecture before making them fully public on GitHub.
+                            </p>
+
+                            <!-- Planned project categories -->
+                            <div class="incubation-sub-grid">
+
+                                <div class="sub-item">
+                                    <span class="sub-tag">01 / TERMINAL</span>
+                                    <h4>Cross-platform CLI automation tool.</h4>
+                                </div>
+
+                                <div class="sub-item">
+                                    <span class="sub-tag">02 / INTERACTION</span>
+                                    <h4>Minimalist UI component playground.</h4>
+                                </div>
+
+                                <div class="sub-item">
+                                    <span class="sub-tag">03 / SECURITY</span>
+                                    <h4>Local-first, encrypted data vault experiment.</h4>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Future project cards to be added here -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Technical interests -->
+        <section class="kinetic-section" id="sec-langs">
+
+            <div class="about-grid">
+
+                <div class="about-left">
+                    <span class="section-tag">// Stack & Philosophy</span>
+
+                    <h2>
+                        Understand many.<br>
+                        Know few.<br>
+                        <span class="text-gradient">Love few.</span>
+                    </h2>
+
+                    <p>
+                        I dive deep into tech ecosystems out of sheer fascination.
+                        Instead of mindlessly scrolling, I spend my time studying
+                        architectural patterns, clean layouts, and efficient
+                        cross-platform performance metrics to build software
+                        that feels right.
+                    </p>
+                </div>
+
+                <!-- Technology tags -->
+                <div class="about-right" id="skills-pill-box">
+
+                    <div class="skill-pill fav-stack" data-index="0">
+                        VanillaJS
+                        <span class="heart-icon"></span>
+                    </div>
+
+                    <div class="skill-pill fav-stack" data-index="1">
+                        ViteJS
+                        <span class="heart-icon"></span>
+                    </div>
+
+                    <div class="skill-pill" data-index="5">Html</div>
+
+                    <div class="skill-pill" data-index="6">Css</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contact -->
+        <section class="kinetic-section" id="sec-final">
+
+            <div class="contact-card">
+
+                <h2>Let’s build something together.</h2>
+
+                <p>
+                    Whether you want to collaborate on an open-source project,
+                    offer architectural mentorship, or have an interesting
+                    freelance gig that aligns with my stack—my inbox is always open.
+                </p>
+
+                <!-- Primary contact -->
+                <div class="email-container">
+                    <a href="mailto:kishanpujari.dev@gmail.com" class="email-link">
+                        kishanpujari.dev@gmail.com
+                    </a>
+                </div>
+
+                <!-- Social links -->
+                <div class="footer-socials">
+                    <a href="https://github.com/KishanPujari/" target="_blank" class="social-item"
+                        aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Site footer -->
+            <footer class="footer">
+                <p>&copy; 2026 Kishan Pujari. Crafted with curiosity. v1.0.0</p>
+            </footer>
+
+        </section>
+
+    </main>
+
+    <!-- Application entry point -->
+    <script type="module" src="./src/js/main.js" defer></script>
+
+</body>
+
+</html>

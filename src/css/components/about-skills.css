@@ -1,0 +1,103 @@
+/*!
+ * @file        about-skills.css
+ * @project     KishanPujari-Portfolio
+ * @version     1.0.0
+ * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
+ * @license     MIT
+ * @description Styles the technical philosophy section, technology
+ *              badges, and interactive skill highlighting.
+ */
+
+/* About section layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Content */
+.about-left h2 {
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    margin: 12px 0 20px;
+    line-height: 1.2;
+}
+
+.about-left p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.65;
+    font-weight: 300;
+}
+
+/* Skills container */
+.about-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Skill badge */
+.skill-pill {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    padding: 12px 22px;
+    border-radius: 100px;
+    font-size: 0.92rem;
+    color: var(--text-primary);
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Active skill state */
+.skill-pill.pill-highlighted {
+    border-color: var(--text-primary) !important;
+    background: var(--bg-surface-elevated);
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+/* Decorative favorite indicator */
+.heart-icon {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    position: relative;
+    transform: rotate(-45deg);
+    background-color: var(--text-muted);
+    margin-left: 8px;
+    vertical-align: middle;
+    transition: background-color 0.3s;
+}
+
+.heart-icon::before,
+.heart-icon::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--text-muted);
+    position: absolute;
+    transition: background-color 0.3s;
+}
+
+.heart-icon::before {
+    top: -4px;
+    left: 0;
+}
+
+.heart-icon::after {
+    top: 0;
+    left: 4px;
+}
+
+/* Active favorite indicator */
+.skill-pill.pill-highlighted .heart-icon,
+.skill-pill.pill-highlighted .heart-icon::before,
+.skill-pill.pill-highlighted .heart-icon::after {
+    background-color: var(--text-primary);
+}

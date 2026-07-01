@@ -1,0 +1,94 @@
+/*!
+ * @file        contact.css
+ * @project     KishanPujari-Portfolio
+ * @version     1.0.0
+ * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
+ * @license     MIT
+ * @description Defines the contact section, social links, shared utility
+ *              icons, and site footer.
+ */
+
+/* Contact card */
+.contact-card {
+    background: radial-gradient(ellipse at top right, var(--bg-surface-elevated) 0%, var(--bg-surface) 75%);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-premium);
+    padding: 60px 40px;
+    text-align: center;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-card h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+/* Email */
+.email-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 45px;
+}
+
+.email-link {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 3.5vw, 2.6rem);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Social links */
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-socials .social-item {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    transition: all 0.3s var(--transition-smooth);
+}
+
+.footer-socials .social-item:hover {
+    color: var(--text-primary);
+    border-color: var(--border-hover);
+}
+
+/* Shared icon utilities */
+.x-icon-svg {
+    width: 16px !important;
+    height: 16px !important;
+    display: inline-block;
+    fill: currentColor;
+}
+
+.icon-sm {
+    font-size: 0.8rem;
+    margin-right: 4px;
+}
+
+/* Site footer */
+.footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}

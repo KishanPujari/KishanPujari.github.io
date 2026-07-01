@@ -1,0 +1,25 @@
+/*!
+ * @file        main.css
+ * @project     KishanPujari-Portfolio
+ * @version     1.0.0
+ * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
+ * @license     MIT
+ * @description Root stylesheet that composes the application's modular
+ *              CSS architecture by importing shared base styles,
+ *              layouts, and UI components.
+ */
+
+/* Foundation */
+@import "../css/base/variables.css";
+@import "../css/base/resets.css";
+
+/* Layouts */
+@import "../css/layout/scrolling.css";
+@import "../css/layout/navbar.css";
+
+/* UI components */
+@import "../css/components/sections.css";
+@import "../css/components/hero.css";
+@import "../css/components/about-skills.css";
+@import "../css/components/contact.css";
+@import "../css/components/coming-soon.css";

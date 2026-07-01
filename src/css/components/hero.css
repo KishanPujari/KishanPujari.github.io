@@ -1,0 +1,93 @@
+/*!
+ * @file        hero.css
+ * @project     KishanPujari-Portfolio
+ * @version     1.0.0
+ * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
+ * @license     MIT
+ * @description Styles the landing hero section, typography, and
+ *              reusable call-to-action button components.
+ */
+
+/* Hero layout */
+.hero-center-wrapper {
+    max-width: 900px;
+    text-align: left;
+}
+
+/* Intro badge */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+}
+
+/* Hero heading */
+.hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 6vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -2px;
+    margin-bottom: 28px;
+}
+
+/* Highlighted heading text */
+.text-gradient {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-primary);
+    opacity: 0.75;
+}
+
+/* Supporting description */
+.hero-subtitle {
+    font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+/* Call-to-action group */
+.hero-cta {
+    display: flex;
+    gap: 20px;
+}
+
+/* Reusable button component */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    border-radius: var(--radius-inner);
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s var(--transition-smooth);
+}
+
+/* Primary button variant */
+.btn-primary {
+    background: var(--text-primary);
+    color: var(--bg-pure);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+/* Secondary button variant */
+.btn-secondary {
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background: var(--bg-surface-elevated);
+}

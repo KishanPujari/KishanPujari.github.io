@@ -1,0 +1,32 @@
+/*!
+ * @file        scrolling.css
+ * @project     KishanPujari-Portfolio
+ * @version     1.0.0
+ * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
+ * @license     MIT
+ * @description Defines the scrolling architecture that powers the
+ *              cinematic fixed-viewport experience and section transitions.
+ */
+
+/* Scroll depth controller */
+.scroll-container-track {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700vh;
+    /* Controlled viewport scroll depth */
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Fixed application viewport */
+.viewport-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    overflow: hidden;
+}
