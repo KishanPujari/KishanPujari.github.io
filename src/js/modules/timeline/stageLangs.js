@@ -1,7 +1,6 @@
 /*!
  * @file        stageLangs.js
  * @project     KishanPujari-Portfolio
- * @version     1.0.0
  * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
  * @license     MIT
  * @description Manages the appearance, transitions, and interactive

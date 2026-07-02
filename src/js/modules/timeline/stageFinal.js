@@ -1,7 +1,6 @@
 /*!
  * @file        stageFinal.js
  * @project     KishanPujari-Portfolio
- * @version     1.0.0
  * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
  * @license     MIT
  * @description Controls the visibility and entrance animation of the

@@ -1,7 +1,6 @@
 /*!
  * @file        math.js
  * @project     KishanPujari-Portfolio
- * @version     1.0.0
  * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
  * @license     MIT
  * @description Collection of lightweight mathematical utilities shared

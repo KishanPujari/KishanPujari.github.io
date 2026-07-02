@@ -1,7 +1,6 @@
 /*!
  * @file        navigation.js
  * @project     KishanPujari-Portfolio
- * @version     1.0.0
  * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
  * @license     MIT
  * @description Provides programmatic navigation helpers for smooth

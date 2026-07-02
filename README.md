@@ -1,6 +1,6 @@
 # Kishan Pujari — Portfolio
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version](https://img.shields.io/badge/version-1.2.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-active-success)
 ![Built With](https://img.shields.io/badge/built%20with-Vanilla%20JS-orange)
@@ -10,7 +10,9 @@ A **cinematic, scroll-driven portfolio system** built using **Vanilla JavaScript
 ---
 
 ## 🌐 Live Demo
-`https://kishanpujari.github.io/`
+
+🚀 **Explore the portfolio here:**  
+**https://kishanpujari.github.io/**
 
 ---
 

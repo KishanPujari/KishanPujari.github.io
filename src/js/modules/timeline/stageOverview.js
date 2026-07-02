@@ -1,7 +1,6 @@
 /*!
  * @file        stageOverview.js
  * @project     KishanPujari-Portfolio
- * @version     1.0.0
  * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
  * @license     MIT
  * @description Controls the intro/overview section animation and
