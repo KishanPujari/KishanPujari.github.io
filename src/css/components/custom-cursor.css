@@ -1,0 +1,63 @@
+/*!
+ * @file        custom-cursor.css
+ * @project     KishanPujari-Portfolio
+ * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
+ * @license     MIT
+ * @description Defines the custom cursor system, including the
+ *              trailing cursor, pointer indicator, interactive hover
+ *              states, and decorative grain overlay.
+ */
+
+/* Replace the default hardware cursor */
+body {
+    cursor: none;
+}
+
+/* Full-screen grain texture overlay */
+.grain-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: var(--grain-opacity);
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Primary cursor ring */
+.custom-cursor {
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--text-primary);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 10000;
+    will-change: transform;
+    transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+}
+
+/* Center cursor indicator */
+.custom-cursor-dot {
+    width: 5px;
+    height: 5px;
+    background-color: var(--text-primary);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 10001;
+    will-change: transform;
+}
+
+/* Expanded cursor state for interactive elements */
+.cursor-hover {
+    width: 54px;
+    height: 54px;
+    background-color: var(--accent-glow);
+}

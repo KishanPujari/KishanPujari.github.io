@@ -9,9 +9,11 @@
 
 import { initTimelineEngine } from './modules/timelineEngine.js';
 import { initGlobalNavigation } from './utils/navigation.js';
+import { initCustomCursor } from './modules/cursor.js';
 
 /* Bootstrap the application */
 document.addEventListener('DOMContentLoaded', () => {
     initTimelineEngine();
     initGlobalNavigation();
+    initCustomCursor();
 });
