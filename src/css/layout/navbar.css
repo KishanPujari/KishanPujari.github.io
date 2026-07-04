@@ -63,3 +63,29 @@
 .nav-item:hover {
     color: var(--text-primary);
 }
+
+/* --- Theme Controller Toggle Switch --- */
+.theme-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-icon-icon {
+    font-size: 1rem;
+    position: absolute;
+    transition: transform 0.5s var(--transition-smooth);
+}
+
+[data-theme="dark"] .moon-icon { transform: translateY(0); }
+[data-theme="dark"] .sun-icon { transform: translateY(30px); }
+[data-theme="light"] .moon-icon { transform: translateY(-30px); }
+[data-theme="light"] .sun-icon { transform: translateY(0); }

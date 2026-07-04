@@ -1,6 +1,6 @@
 # Kishan Pujari — Portfolio
 
-![Version](https://img.shields.io/badge/version-1.3.0-blue)
+![Version](https://img.shields.io/badge/version-1.4.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-active-success)
 ![Built With](https://img.shields.io/badge/built%20with-Vanilla%20JS-orange)
