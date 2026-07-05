@@ -28,3 +28,18 @@
 .kinetic-section.active {
     pointer-events: auto;
 }
+
+/* --- Name Highlight --- */
+.name-highlight {
+    font-weight: 600;
+    color: var(--text-primary);
+    padding: 2px 10px;
+    margin: 0 4px;
+    position: relative;
+    border: 1px solid var(--name-border);
+    border-radius: 6px;
+    background: var(--accent-glow);
+    display: inline-block;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
