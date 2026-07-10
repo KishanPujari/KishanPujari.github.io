@@ -1,0 +1,122 @@
+/*!
+ * @file        bento.css
+ * @project     KishanPujari-Portfolio
+ * @author      Kishan Pujari <kishanpujari.dev@gmail.com>
+ * @license     MIT
+ * @description Defines the bento grid component and pinned layout panels,
+ *              including project cards, section headers, and visual styling.
+ */
+
+/* Layout panels */
+.layout-panel {
+    padding: 0;
+}
+
+.panel-inner-scroll {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden; /* Programmatically shifted via track parameters */
+    padding: 120px 8% 60px 8%;
+}
+
+.grid-container-block {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section header */
+.section-header {
+    margin-bottom: 45px;
+}
+
+.section-tag {
+    font-family: monospace;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.section-header h2 {
+    font-family: var(--font-display);
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+/* Bento grid engine */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* Bento card */
+.bento-item {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-premium);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 380px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.bento-item.featured {
+    grid-column: span 2;
+    min-height: 420px;
+}
+
+/* Project media */
+.project-img-wrapper {
+    width: 100%;
+    height: 68%;
+    border-radius: var(--radius-inner);
+    overflow: hidden;
+}
+
+.project-placeholder-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-letters {
+    font-family: var(--font-display);
+    font-size: 3.5rem;
+    color: var(--text-primary);
+    opacity: 0.03;
+    font-weight: 800;
+}
+
+/* Project metadata */
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.project-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+}
+
+.project-info p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.45;
+    max-width: 90%;
+}
+
+.project-tag-icon {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
