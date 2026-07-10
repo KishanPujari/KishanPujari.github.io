@@ -36,6 +36,7 @@
     font-size: 0.85rem;
     display: block;
     margin-bottom: 8px;
+    margin-top: 16px;
 }
 
 .section-header h2 {
@@ -78,6 +79,10 @@
     height: 68%;
     border-radius: var(--radius-inner);
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-surface);
 }
 
 .project-placeholder-img {
@@ -94,6 +99,34 @@
     color: var(--text-primary);
     opacity: 0.03;
     font-weight: 800;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.bento-item:hover .project-image {
+    transform: scale(1.04);
+}
+
+.project-img-wrapper {
+    position: relative;
+}
+
+.project-img-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        transparent 60%,
+        rgba(0, 0, 0, 0.25)
+    );
+    pointer-events: none;
 }
 
 /* Project metadata */
